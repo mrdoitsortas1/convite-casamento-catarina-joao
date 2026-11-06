@@ -21,11 +21,11 @@
 <style>:where([data-sonner-toast]:focus-visible){box-shadow:0 4px 12px #0000001a,0 0 0 2px #0003}@keyframes swipe-out-left{0%{transform:var(--y) translate(var(--swipe-amount-x));opacity:1}to{transform:var(--y) translate(calc(var(--swipe-amount-x) - 100%));opacity:0}}@keyframes swipe-out-right{0%{transform:var(--y) translate(var(--swipe-amount-x));opacity:1}to{transform:var(--y) translate(calc(var(--swipe-amount-x) + 100%));opacity:0}}@keyframes swipe-out-up{0%{transform:var(--y) translateY(var(--swipe-amount-y));opacity:1}to{transform:var(--y) translateY(calc(var(--swipe-amount-y) - 100%));opacity:0}}@keyframes swipe-out-down{0%{transform:var(--y) translateY(var(--swipe-amount-y));opacity:1}to{transform:var(--y) translateY(calc(var(--swipe-amount-y) + 100%));opacity:0}}@keyframes sonner-fade-in{0%{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}@keyframes sonner-fade-out{0%{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.8)}}@keyframes sonner-spin{0%{opacity:1}to{opacity:.15}}</style><style>undefined</style><meta content="no-referrer" name="referrer"/><style>.sf-hidden{display:none!important}</style><meta content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'unsafe-inline' data:; object-src 'self' data:; frame-src 'self' data:; form-action 'none'; base-uri 'none';" http-equiv="content-security-policy"/>
 
 <style>
-/* Ajuste exclusivo para telemóveis: recorta o espaço vazio superior do poster
-   sem alterar o enquadramento da versão desktop. */
+/* Telemóveis: aproximar o enquadramento do vídeo para cortar o vazio
+   que já vem na parte superior da imagem de fundo. Desktop inalterado. */
 @media (max-width: 767px) {
   main > section:first-child > video {
-    transform: scale(1.18) translateY(-3vh);
+    transform: scale(1.28) translateY(-7vh);
     transform-origin: center center;
   }
 }
