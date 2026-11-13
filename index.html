@@ -750,4 +750,12 @@ body.welcome-lock { overflow: hidden !important; }
   }, { once: true });
 })();
 </script>
+<style id="mobile-top-spacing-fix">
+/* Em ecrãs móveis, reposiciona o vídeo do cabeçalho para eliminar o excesso de branco no topo. */
+@media (max-width: 767px) {
+  main > section:first-child > video {
+    object-position: center bottom !important;
+  }
+}
+</style>
 </body></html>
